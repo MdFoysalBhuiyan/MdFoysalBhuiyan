@@ -1,6 +1,10 @@
-# 👋 Hi, I'm Foysal Bhuiyan
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=MdFoysalBhuiyan.MdFoysalBhuiyan" />
 
-### Computer Science & Engineering Student | Developer | Tech Enthusiast
+<h1 align="center">
+  
+<img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&duration=4000&pause=500&color=F56C22&background=4F311C00&width=500&height=70&lines=Hi!+I'm+ifti;I'm+a+student+of;Computer+Science" alt="Typing SVG" /></a>
+
+ </div>
 
 ---
 
