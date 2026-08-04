@@ -32,6 +32,14 @@
 
 ## 📊 GitHub Contributions
 
+### 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/github-snake.svg">
+  <img alt="GitHub contribution snake animation" src="./dist/github-snake.svg">
+</picture>
+
 <img src="./contrib-heatmap.svg" width="700">
 
 ---
@@ -49,7 +57,6 @@
 ---
 
 [![](https://komarev.com/ghpvc/?username=MdFoysalBhuiyan&icon=0&color=0)](https://visitcount.itsvg.in)
-
 
 
 

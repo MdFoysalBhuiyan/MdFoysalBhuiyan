@@ -1,4 +1,4 @@
-name: Update GitHub Contribution Art
+name: Update GitHub Profile
 
 on:
   schedule:
@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -26,16 +25,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      # Update contribution data
       - name: Fetch contributions
         run: python scripts/fetch_contributions.py
         env:
           GH_PROFILE_USER: MdFoysalBhuiyan
 
+      # Generate our contribution heatmap
       - name: Generate heatmap
         run: python scripts/render_heatmap_svg.py
 
+      # Generate GitHub Snake animation
+      - name: Generate GitHub Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: MdFoysalBhuiyan
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Commit all generated files
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "chore: update GitHub contribution graph"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_message: "chore: update GitHub profile animations"
+          file_pattern: "data/contributions.json contrib-heatmap.svg dist/github-snake.svg dist/github-snake-dark.svg"
