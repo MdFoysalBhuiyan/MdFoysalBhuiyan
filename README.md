@@ -35,9 +35,9 @@
 ### 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./dist/github-snake.svg">
-  <img alt="GitHub contribution snake animation" src="./dist/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MdFoysalBhuiyan/MdFoysalBhuiyan/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MdFoysalBhuiyan/MdFoysalBhuiyan/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/MdFoysalBhuiyan/MdFoysalBhuiyan/output/github-contribution-grid-snake.svg">
 </picture>
 
 <img src="./contrib-heatmap.svg" width="700">
